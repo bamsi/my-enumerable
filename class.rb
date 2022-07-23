@@ -11,6 +11,7 @@ class MyList
     @list.each(&block)
   end
 end
+
 list = MyList.new([1, 2, 3, 4])
 # Test #all?
 puts(list.all? { |e| e < 5 })
