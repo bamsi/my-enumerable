@@ -1,10 +1,10 @@
 module MyEnumerable
   def all?
-    answer = true
+    ans = true
     each do |i|
-      answer = false unless yield i
+      ans = false unless yield i
     end
-    answer
+    ans
   end
 
   def any?
